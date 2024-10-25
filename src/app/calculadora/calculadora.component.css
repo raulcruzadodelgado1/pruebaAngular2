@@ -1,0 +1,30 @@
+.calculadora {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-top: 2%;
+  padding: 2%;
+  background-color: #477644;
+}
+
+input {
+  width: 200px;
+  padding: 5px;
+  margin: 5px 0;
+}
+
+button {
+  padding: 5px 10px;
+  margin: 5px;
+}
+
+#resultado {
+  margin-top: 10px;
+  font-size: 1.2em;
+}
+
+.operaciones{
+  display: flex;
+  gap: 10px;
+}

@@ -1,0 +1,9 @@
+.temporizador {
+  margin-top: 2%;
+  background-color: #325576;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 36%;
+  padding: 2%;
+}

@@ -1,0 +1,8 @@
+<div class="temporizador">
+  <input [(ngModel)]="tiempo" type="number" placeholder="Tiempo en segundos" />
+  <button (click)="iniciar()">Iniciar</button>
+  <button (click)="detener()">Detener</button>
+  <div *ngIf="tiempoRestante > 0">
+    <p>Tiempo restante: {{ tiempoRestante }} segundos</p>
+  </div>
+</div>

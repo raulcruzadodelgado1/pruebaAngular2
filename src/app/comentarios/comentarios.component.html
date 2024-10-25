@@ -1,0 +1,7 @@
+<div class="comentarios">
+  <input [(ngModel)]="nuevoComentario" placeholder="Escribe un comentario" />
+  <button (click)="agregarComentario()">Enviar</button>
+  <ul>
+    <li *ngFor="let comentario of comentarios">{{ comentario }}</li>
+  </ul>
+</div>

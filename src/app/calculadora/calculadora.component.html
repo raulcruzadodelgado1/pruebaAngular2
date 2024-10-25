@@ -1,0 +1,15 @@
+<div class="calculadora">
+  <input type="number" [(ngModel)]="num1" placeholder="Ingrese el primer número">
+  <input type="number" [(ngModel)]="num2" placeholder="Ingrese el segundo número">
+
+  <div class="operaciones">
+    <button (click)="calcular('sumar')">Sumar</button>
+    <button (click)="calcular('restar')">Restar</button>
+    <button (click)="calcular('multiplicar')">Multiplicar</button>
+    <button (click)="calcular('dividir')">Dividir</button>
+    <button (click)="calcular('raiz')">Raíz Cuadrada</button>
+  </div>
+  <div id="resultado" *ngIf="resultado !== null">
+    Resultado: {{ resultado }}
+  </div>
+</div>

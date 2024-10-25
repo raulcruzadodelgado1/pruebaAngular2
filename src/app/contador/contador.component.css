@@ -1,0 +1,14 @@
+.ejercicio2 {
+  margin-top: 2%;
+  background-color: #427630;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 36%;
+  padding: 2%;
+}
+#btn_iniciar{
+  background-color: #427630;
+  width: 100px;
+  cursor: help;
+}

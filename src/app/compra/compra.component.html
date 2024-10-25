@@ -1,0 +1,20 @@
+<div class="compra-container">
+  <div class="articulos">
+    <div *ngFor="let articulo of articulos">
+      <span>{{ articulo.nombre }} - {{ articulo.precio | currency:'EUR' }}</span>
+      <button (click)="sumarCantidad(articulo)">+</button>
+      <button (click)="disminuirCantidad(articulo)">-</button>
+    </div>
+  </div>
+  <div class="ticket">
+    <h3>Ticket de Compra</h3>
+    <div *ngFor="let articulo of articulos">
+      <div *ngIf="articulo.cantidad > 0">
+        <span>{{ articulo.nombre }}: {{ articulo.cantidad }} x {{ articulo.precio | currency:'EUR' }} = {{ articulo.cantidad * articulo.precio | currency:'EUR' }}</span>
+      </div>
+    </div>
+    <div>
+      <strong>Total: {{ calcularTotal() | currency:'EUR' }}</strong>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,18 @@
+.compra-container {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 2%;
+  background-color: #61762f;
+  padding: 3%;
+}
+
+.articulos, .ticket {
+  width: 15%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.articulos div, .ticket div {
+  margin-bottom: 10px;
+}
